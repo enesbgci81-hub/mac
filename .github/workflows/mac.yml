@@ -8,10 +8,22 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Check macOS
+      - name: Mac terminal
         run: |
-          echo "Mac açıldı!"
+          echo "🍎 Mac açıldı!"
+          echo "------ Sistem ------"
           sw_vers
           system_profiler SPHardwareDataType
-          echo "Terminal kullanabilirsin."
+
+          echo "------ Bulunduğun klasör ------"
+          pwd
+
+          echo "------ Dosyalar (Finder gibi) ------"
+          ls -la
+
+          echo "------ Ana dizin ------"
+          cd /
+          ls
+
+          echo "Terminal açık kalıyor..."
           sleep 3600
