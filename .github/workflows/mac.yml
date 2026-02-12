@@ -10,20 +10,27 @@ jobs:
     steps:
       - name: Mac terminal
         run: |
-          echo "🍎 Mac açıldı!"
+          echo "Mac acildi"
           echo "------ Sistem ------"
           sw_vers
-          system_profiler SPHardwareDataType
 
           echo "------ Bulunduğun klasör ------"
           pwd
 
-          echo "------ Dosyalar (Finder gibi) ------"
+          echo "------ Proje dosyalari ------"
           ls -la
 
-          echo "------ Ana dizin ------"
+          echo "------ Kök dizin ------"
           cd /
           ls
 
-          echo "Terminal açık kalıyor..."
+          echo "------ Users klasörü ------"
+          cd /Users
+          ls
+
+          echo "------ Kullanici klasörü ------"
+          cd /Users/runner
+          ls
+
+          echo "Terminal acik kaliyor..."
           sleep 3600
