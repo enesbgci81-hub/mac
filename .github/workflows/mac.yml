@@ -1,0 +1,17 @@
+name: macOS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Check macOS
+        run: |
+          echo "Mac açıldı!"
+          sw_vers
+          system_profiler SPHardwareDataType
+          echo "Terminal kullanabilirsin."
+          sleep 3600
