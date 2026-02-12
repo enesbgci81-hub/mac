@@ -1,4 +1,4 @@
-name: macOS
+name: macOS-new
 
 on:
   workflow_dispatch:
