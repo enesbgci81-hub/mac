@@ -30,7 +30,8 @@ jobs:
 
           echo "------ Kullanici klasörü ------"
           cd /Users/runner
-          ls
+          pwd
+          ls -la
 
           echo "Terminal acik kaliyor..."
           sleep 3600
